@@ -1,0 +1,94 @@
+.detail-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.detail-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.detail-image-wrapper {
+  flex: 1;
+}
+
+.detail-image {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-title {
+  font-family: var(--font-secundaria);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 2.2rem;
+  color: var(--color-siena-tostado);
+}
+
+.detail-description {
+  font-family: var(--font-primaria);
+  font-weight: 400;
+  margin: 1.5rem 0;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.detail-price {
+  font-family: var(--font-primaria);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--color-texto-principal);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  font-family: var(--font-primaria);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: var(--color-siena-tostado);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #7c4021;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.delete-button {
+  background-color: #c0392b;
+}
+
+.delete-button:hover {
+  background-color: #a93226;
+}
+
+@media (max-width: 768px) {
+  .detail-content {
+    flex-direction: column;
+  }
+}

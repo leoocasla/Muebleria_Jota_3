@@ -1,0 +1,6 @@
+/* ... (estilos existentes) ... */
+
+.product-card-link {
+  text-decoration: none;
+  color: inherit; /* Hereda el color del texto, no lo pone azul */
+}

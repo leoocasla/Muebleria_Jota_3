@@ -1,0 +1,20 @@
+.footer-site {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-family: var(--font-primaria);
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #555;
+  letter-spacing: 0.02em;
+}
