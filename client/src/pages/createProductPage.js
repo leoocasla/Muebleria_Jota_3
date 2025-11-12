@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// Reusamos los estilos del formulario de contacto
-import '../components/contactForm/contactForm.css';
+import '../components/ContactForm/ContactForm.css';
 
 const CreateProductPage = () => {
   const [formData, setFormData] = useState({

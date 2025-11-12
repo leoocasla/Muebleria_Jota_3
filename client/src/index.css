@@ -1,6 +1,36 @@
-/* ... (estilos existentes) ... */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap');
 
-.product-card-link {
-  text-decoration: none;
-  color: inherit; /* Hereda el color del texto, no lo pone azul */
+:root {
+  --color-siena-tostado: #A0522D;
+  --color-verde-salvia: #87A96B;
+  --color-alabastro-calido: #F5E6D3;
+  --color-vara-de-oro: #D4A437;
+  --color-rosa-polvoriento: #C47A6D;
+  --color-texto-principal: #333;
+
+  --font-primaria: 'Inter', sans-serif;
+  --font-secundaria: 'Playfair Display', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primaria);
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: var(--color-texto-principal);
+  background-color: var(--color-alabastro-calido);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }

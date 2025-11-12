@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import ProductDetail from '../components/productDetail/productDetail';
+import ProductDetail from '../components/ProductDetail/ProductDetail';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 const ProductDetailPage = ({ onAddToCart }) => {
   const [product, setProduct] = useState(null);
@@ -59,11 +60,19 @@ const ProductDetailPage = ({ onAddToCart }) => {
   if (!product) return <p>Producto no encontrado.</p>;
 
   return (
-    <ProductDetail 
-      product={product} 
-      onDelete={handleDelete}
-      onAddToCart={handleAddToCartClick}
-    />
+    <>
+      <button onClick={() => navigate('/productos')} className="back-button">
+        ← Volver al catálogo
+      </button>
+
+      <ProductDetail 
+        product={product} 
+        onDelete={handleDelete}
+        onAddToCart={handleAddToCartClick}
+      />
+
+      <ContactForm />
+    </>
   );
 };
 

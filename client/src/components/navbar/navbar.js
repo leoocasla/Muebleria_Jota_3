@@ -12,7 +12,6 @@ const Navbar = ({ cartItemCount }) => {
         <nav className="navbar-nav">
           <Link to="/productos">Catálogo</Link>
           <Link to="/admin/crear-producto">Crear Producto</Link>
-          <Link to="/contacto">Contacto</Link>
         </nav>
         <div className="navbar-cart">
           <span>🛒 Carrito ({cartItemCount})</span>

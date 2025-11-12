@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import ProductList from '../components/productList/productList';
+import ProductList from '../components/ProductList/ProductList';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 const CatalogoPage = () => {
   const [products, setProducts] = useState([]);
@@ -31,7 +32,12 @@ const CatalogoPage = () => {
   if (loading) return <h2 className="section-title">Cargando productos...</h2>;
   if (error) return <p style={{ color: 'red', textAlign: 'center' }}>Error: {error}</p>;
 
-  return <ProductList products={products} />;
+  return (
+    <>
+      <ProductList products={products} />
+      <ContactForm />
+    </>
+  );
 };
 
 export default CatalogoPage;

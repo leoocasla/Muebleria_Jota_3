@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/navbar/navbar';
-import Footer from './components/footer/footer';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
-import HomePage from './pages/homePage';
-import CatalogoPage from './pages/catalogoPage';
-import ProductDetailPage from './pages/productDetailPage';
-import CreateProductPage from './pages/createProductPage';
-import ContactoPage from './pages/contactoPage';
+import HomePage from './pages/HomePage';
+import CatalogoPage from './pages/CatalogoPage';
+import ProductDetailPage from './pages/ProductDetailPage';
+import CreateProductPage from './pages/CreateProductPage';
+
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -27,9 +27,8 @@ function App() {
             path="/productos/:id" 
             element={<ProductDetailPage onAddToCart={handleAddToCart} />} 
           />
-          <Route path="/admin/crear-producto" element={<CreateProductPage />} />
-          <Route path="/contacto" element={<ContactoPage />} />
-        </Routes>
+        <Route path="/admin/crear-producto" element={<CreateProductPage />} />
+      </Routes>
       </main>
       <Footer />
     </div>
